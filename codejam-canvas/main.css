@@ -1,0 +1,228 @@
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.header
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    width: 100vw;
+    height: 100px;
+    margin-bottom: 50px;
+
+    border: 1px white solid;
+}
+
+.header-link
+{
+    font-family: 'Carrois Gothic SC', 'Arial', sans-serif;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+.header-link--text
+{
+    font-weight: 300;
+}
+
+.button
+{
+    font-family: 'Carrois Gothic SC', 'Arial', sans-serif;
+
+    color: white;
+    border: none;
+    background: none;
+}
+
+.button:hover
+{
+    background-color: red;
+}
+
+.header-button
+{
+    width: 100px;
+
+    border-top: none;
+    border-bottom: none;
+}
+
+.tools-button,
+.colors-button,
+.paint-button
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+
+    width: 250px;
+    height: 60px;
+    padding-left: 30px;
+
+    border-top: 1px white solid;
+    border-right: 1px white solid;
+    border-left: 1px white solid;
+}
+
+.tools-button:focus,
+.colors-button:focus,
+.paint-button:focus
+{
+    border: 2px white solid;
+}
+
+.tools-button:last-child,
+.colors-button:last-child,
+.paint-button:last-child
+{
+    border-bottom: 1px white solid;
+}
+
+.tools-button:last-child:focus,
+.colors-button:last-child:focus,
+.paint-button:last-child:focus
+{
+    border: 2px white solid;
+}
+
+.tools-button--text,
+.colors-button--text
+{
+    margin: 0;
+}
+
+.fas,
+.paint-button--logo
+{
+    font-size: 2rem;
+
+    width: 35px;
+    margin-right: 30px;
+
+    color: white;
+}
+
+.fas-header
+{
+    margin: 0;
+}
+
+.header-title
+{
+    font-family: 'Carrois Gothic SC', 'Arial', sans-serif;
+    font-weight: 100;
+
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+
+    color: white;
+}
+
+body
+{
+    background-color: black;
+}
+
+.main
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.tools,
+.colors,
+.paint
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+
+    border-collapse: collapse;
+}
+
+.toolbox-tools
+{
+    margin: 0 0 0 50px;
+}
+
+.toolbox-colors
+{
+    margin: 50px 0 50px 50px;
+}
+
+.main-paint
+{
+    margin-right: 50px;
+}
+
+.button-circle
+{
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+
+    border: 1px white solid;
+    border-radius: 50%;
+}
+
+.button-circle--white
+{
+    background-color: white;
+}
+
+.button-circle--red
+{
+    background-color: red;
+}
+
+#codejam-canvas
+{
+    border: dotted 1px white;
+}
+
+.canvas
+{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.paint-button--logo
+{
+    font-weight: 900;
+}
+
+.footer-author--name
+{
+    font-family: 'Carrois Gothic SC', 'Arial', sans-serif;
+    font-size: .7rem;
+    font-weight: 100;
+
+    margin-left: 50px;
+
+    color: white;
+}
+/*# sourceMappingURL=main.css.map */
