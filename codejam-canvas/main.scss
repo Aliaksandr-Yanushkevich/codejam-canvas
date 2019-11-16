@@ -1,0 +1,153 @@
+$font-family: 'Carrois Gothic SC', 'Arial', sans-serif;
+$border: 1px white solid;
+$border-focus: 2px white solid;
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100px;
+    width: 100vw;
+    border: $border;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    margin-bottom: 50px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: white;
+    font-family: $font-family;
+    &--text {
+        font-weight: 300;
+    }
+}
+
+.button {
+    background: none;
+    border: none;
+    color: white;
+    font-family: $font-family;
+    &:hover {
+        background-color: red;
+    }
+}
+
+.header-button {
+    width: 100px;
+    border-bottom: none;
+    border-top: none;
+}
+
+.tools-button, .colors-button, .paint-button {
+    display: flex;
+    width: 250px;
+    height: 60px;
+    border-top: $border;
+    border-left: $border;
+    border-right: $border;
+    padding-left: 30px;
+    align-items: center;
+   
+    &:focus {
+        border: $border-focus;
+    }
+}
+
+.tools-button:last-child, .colors-button:last-child, .paint-button:last-child {
+    border-bottom: $border;
+    &:focus {
+        border: $border-focus;
+    }
+}
+
+
+.tools-button--text , .colors-button--text{
+    margin: 0;
+    
+}
+
+.fas, .paint-button--logo {
+    font-size: 2rem;
+    color: white;
+    width: 35px;
+    margin-right: 30px;
+}
+
+.fas-header {
+    margin: 0;
+}
+
+.header-title {
+    color: white;
+    font-family: $font-family;
+    font-weight: 100;
+    align-self: center;
+}
+
+body {
+    background-color: black;
+}
+
+.main  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools,  .colors, .paint {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+.toolbox-tools  {
+    margin: 0 0 0 50px; 
+}
+
+.toolbox-colors {
+    margin: 50px 0 50px 50px; 
+}
+
+.main-paint {
+    margin-right: 50px;
+}
+
+.button-circle {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: $border;
+    margin-right: 30px;
+}
+
+.button-circle--white {
+    background-color: white;
+}
+
+.button-circle--red {
+    background-color: red;
+}
+
+#codejam-canvas {
+    border: dotted 1px white;
+}
+
+.canvas {
+    justify-content: center;
+    // border: 3px red solid;
+} 
+
+.paint-button--logo {
+    font-weight: 900;
+}
+
+.footer-author--name {
+    margin-left: 50px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 100;
+    font-family: $font-family;
+}
